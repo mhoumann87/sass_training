@@ -1,0 +1,31 @@
+{
+  "name": "essentiel_training",
+  "version": "1.0.0",
+  "description": "Just to fresh up my SASS game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhoumann87/sass_training.git"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "webdev",
+    "webdesign",
+    "node"
+  ],
+  "author": "Michael Houmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mhoumann87/sass_training/issues"
+  },
+  "homepage": "https://github.com/mhoumann87/sass_training#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
