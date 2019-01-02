@@ -1,6 +1,7 @@
 const gulp = require('gulp'),
   sass = require('gulp-sass'),
-  autoprefixer = require('gulp-autoprefixer');
+  autoprefixer = require('gulp-autoprefixer')
+sourcemaps = require('gulp-sourcemaps');
 
 sass.compiler = require('node-sass');
 
@@ -9,11 +10,13 @@ const dest = 'production/css';
 
 gulp.task('sass', function () {
   gulp.src(src)
+    .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest(dest));
 });
 
