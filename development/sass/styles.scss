@@ -1,20 +1,4 @@
-body {
-  background-color: #f00;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #fff;
-  border-bottom: 10px solid gold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main h1 {
-  text-align: center;
-  font-size: 4rem;
-  font-weight: 200;
-  height: 80vh;
-}
+@import "./reset";
+@import "./variables";
+@import "./base";
+@import "./modules/header";

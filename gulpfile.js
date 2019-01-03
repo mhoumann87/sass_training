@@ -12,16 +12,17 @@ gulp.task('sass', function () {
   gulp.src(src)
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
     .pipe(autoprefixer({
       browsers: ['last 2 versions'],
       cascade: false
     }))
-    .pipe(sourcemaps.write())
+
     .pipe(gulp.dest(dest));
 });
 
 gulp.task('watch', function () {
-  gulp.watch('development/**/*.scss', gulp.series('sass'));
+  gulp.watch('development/sass/**/*.scss', gulp.series('sass'));
 });
 
 gulp.task('default', function () {
