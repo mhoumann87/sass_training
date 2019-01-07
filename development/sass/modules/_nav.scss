@@ -1,5 +1,5 @@
 nav {
-  background-color: #000;
+  background-color: $background-dark;
   display: flex;
   padding: 0 1em;
   justify-content: space-between;
@@ -7,21 +7,19 @@ nav {
   & ul {
     display: flex;
     justify-content: center;
+    list-style: none;
     & li {
       padding: 1em 1.5em;
     }
   }
   & a {
-    color: white;
+    color: $font-color-light;
     font-size: 1.5rem;
     text-decoration: none;
     font-family: $font-body;
   }
-  & a:hover {
-    color: rgb(175, 175, 175);
-  }
   & p {
-    color: #fff;
+    color: $font-color-light;
     font-size: 1.5rem;
   }
 }

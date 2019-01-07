@@ -13,6 +13,10 @@ p {
   font-family: $font-body;
 }
 
+a:hover {
+  color: $hover-color;
+}
+
 .top-text {
   font-size: 6rem;
   font-weight: 300;

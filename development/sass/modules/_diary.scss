@@ -1,0 +1,26 @@
+.diary {
+  max-width: 60%;
+  margin: 2em auto;
+  & .diary__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding: 10px;
+    box-shadow: 0 0 1px 0 rgba($font-color-base, 0.3);
+  }
+  & .day {
+    font-size: .8rem;
+    margin-bottom: 0.5em;
+  }
+  @supports (grid-area: auto) {
+    max-width: none;
+    margin: 2rem 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: .8em;
+    & .diary__container {
+      margin-bottom: 0;
+    }
+  }
+}
