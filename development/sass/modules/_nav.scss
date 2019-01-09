@@ -1,9 +1,17 @@
 nav {
+  position: relative;
   background-color: $background-dark;
   display: flex;
   padding: 0 1em;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
+  &.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
   & ul {
     display: flex;
     justify-content: center;
