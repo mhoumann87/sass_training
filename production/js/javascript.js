@@ -47,7 +47,7 @@ const startDate = (Date.parse('Thu, Jan 3 1:00:00 2019')) / 1000;
 
 // One day in uxni time = 86400
 const oneDay = 60 * 60 * 24;
-console.log(oneDay);
+
 // Calculate end day in unix time code april 13 2019
 const endDay = (oneDay * 100) + startDate;
 
@@ -84,7 +84,6 @@ function smoothScroll(target) {
   //animation based on requestAnimationTime read more https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
   function animation(currentTime) {
     if (startTime === null) startTime = currentTime;
-    console.log(startTime);
     let timeElapsed = currentTime - startTime;
     let run = ease(timeElapsed, startPos, distance, duration);
     window.scrollTo(0, run);

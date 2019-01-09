@@ -4,13 +4,22 @@
   & .diary__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 2rem;
     padding: 10px;
     box-shadow: 0 0 1px 0 rgba($font-color-base, 0.3);
   }
   & .day {
     font-size: .8rem;
+    margin-bottom: 0.5em;
+    align-self: flex-end;
+  }
+  & h3 {
+    color: $background-dark;
+    margin-bottom: 0.8em;
+    line-height: 1;
+  }
+  & p:not(:last-child) {
     margin-bottom: 0.5em;
   }
   @supports (grid-area: auto) {

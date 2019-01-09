@@ -2,6 +2,7 @@ nav {
   position: relative;
   background-color: $background-dark;
   display: flex;
+  flex-direction: column;
   padding: 0 1em;
   justify-content: space-between;
   align-items: center;
@@ -29,5 +30,11 @@ nav {
   & p {
     color: $font-color-light;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  nav {
+    flex-direction: row;
   }
 }

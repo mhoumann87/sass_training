@@ -1,0 +1,44 @@
+.about {
+  & p.days {
+    font-size: 2.4em;
+    font-weight: 300;
+    text-align: end;
+    color: $background-dark;
+    margin-bottom: 2rem;
+  }
+  & .info-box {
+    display: flex;
+    flex-direction: column;
+    & .info {
+      margin-bottom: 1.4em;
+      padding: .6em;
+      & h2 {
+        margin-bottom: 1.5em;
+      }
+      & p {
+        margin-bottom: 1em;
+      }
+      & ul {
+        margin-bottom: 2em;
+        padding: 0.8em;
+        font-family: $font-body;
+        color: $font-color-base;
+        & li:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    .info-box {
+      flex-direction: row;
+      justify-content: space-between;
+      & .info.my {
+        flex: 2 1 30%;
+      }
+      & .info.proj {
+        flex: 1 1 40%;
+      }
+    }
+  }
+}

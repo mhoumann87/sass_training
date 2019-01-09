@@ -2,8 +2,12 @@ footer {
   background-color: $background-dark;
   padding: 2em 1em;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  & section {
+    margin-bottom: 1em;
+  }
   & a,
   & p {
     color: $font-color-light;
@@ -22,5 +26,14 @@ footer {
   }
   & i:hover {
     background: $hover-color;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    flex-direction: row;
+    & section {
+      margin: 0;
+    }
   }
 }

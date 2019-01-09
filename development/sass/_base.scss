@@ -6,11 +6,13 @@ h5,
 h6 {
   font-family: $font-headline;
   font-weight: 700;
+  color: $font-color-base;
 }
 
 a,
 p {
   font-family: $font-body;
+  color: $font-color-base;
 }
 
 a:hover {
